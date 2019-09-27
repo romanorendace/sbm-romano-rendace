@@ -11,10 +11,17 @@ Unattended-Upgrade::Allowed-Origins {
 	// available, the policy for updates is such that unattended-upgrades
 	// should also install from here by default.
 	"${distro_id}ESM:${distro_codename}";
-//	"${distro_id}:${distro_codename}-updates";
+	"${distro_id}:${distro_codename}-updates";
 //	"${distro_id}:${distro_codename}-proposed";
 //	"${distro_id}:${distro_codename}-backports";
 };
+
+Unattended-Upgrade::Mail "romano.rendace@student.ucll.be"; 
+Unattended-Upgrade::MailOnlyOnError "true";
+Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";
+Unattended-Upgrade::Remove-Unused-Dependencies "true";
+Unattended-Upgrade::Automatic-Reboot "true";
+Unattended-Upgrade::Automatic-Reboot-Time "02:38";
 
 // List of packages to not update (regexp are supported)
 Unattended-Upgrade::Package-Blacklist {
