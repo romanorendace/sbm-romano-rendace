@@ -5,10 +5,7 @@
 127.0.0.0/8
 ::1/128
 
-# my ip addresses
-193.191.177.201
-fe80::8e3:66ff:fe5a:73c9
-
-# mrt.uclllabs.be
+# server checks Mr.T 
+193.191.177.1
 193.191.177.6
 2001:6a8:2880:a021::6
